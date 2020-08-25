@@ -15,12 +15,24 @@ body {
 
 body {
   position: relative;
-  background: #000;
+  background: repeating-linear-gradient(#FAF, #FAE 20%, #58a 80%, #58a 100%);
+}
+.bg_img{
+  position: absolute;
+  width: 240px;
+  top: 50%;
+  left: 50%;
+  margin-top: -120px;
+  margin-left: -120px;
+  border-radius: 50%;
+  z-index: 99;
+  opacity: .8;
 }
 
 	</style>
 </head>
 <body>
+  <img src="https://s1.ax1x.com/2020/08/25/dgkYrD.jpg" class="bg_img" />
 <script type="text/javascript">
 	/*
 * File Name / blowingHeart.js
@@ -112,7 +124,7 @@ class Canvas {
     this.width = this.canvas.width = window.innerWidth;
     this.height = this.canvas.height = window.innerHeight;
     // size.
-    this.width < 768 ? this.heartSize = 180 : this.heartSize = 250;
+    this.width < 768 ? this.heartSize = 280 : this.heartSize = 450;
     // mouse infomation.
     this.mouseX = null;
     this.mouseY = null;
